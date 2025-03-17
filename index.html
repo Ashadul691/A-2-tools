@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-02</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 bg-gradient-to-r from-red-300 to-orange-500 text-white">
+        <div class="text-4xl text-gray-900 font-bold">DEV SPACE</div>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#" class="hover:">What we do</a></li>
+            <li><a href="#" class="hover:">How we work</a></li>
+            <li><a href="#" class="hover:">Pricing</a></li>
+            <li><a href="#" class="hover:">Our Team</a></li>
+        </ul>
+        <a href="#" class="bg-white text-green-600 px-4 py-2 rounded-full hover: ">Download</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="flex justify-between items-center text-white p-12 bg-gradient-to-r from-red-300 to-orange-500">
+        <div class="text-center ml-60"><h1 class="text-6xl font-bold bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent">Design UI <br> App Development <br> Consultant Services</h1>
+            <p class="mt-8 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="mt-10 inline-block bg-blue-900 text-white px-6 py-3 rounded-full">START A PROJECT TODAY</a>
+        </div>
+            
+                <img class="w-3/6 rounded-lg" src="images/group.jpg" alt="" srcset="">
+            
+    </header>
+
+    <!-- Trusted Clients -->
+    <section class="bg-white py-8 text-center">
+        <h2 class="text-gray-500 text-lg">Trusted By The Best Clients</h2>
+        <div class="flex justify-center space-x-6 mt-4">
+            <img src="images/algol.jpg" alt="Algolia" class="h-20">
+            <img src="images/lapa.png" alt="Lapa" class="h-20">
+            <img src="images/hugo-svgrepo-com.svg" alt="Hugo" class="h-20">
+            <img src="images/codeacademy.png" alt="Codecademy" class="h-20">
+            <img src="images/aws.png" alt="AWS" class="h-20">
+            <img src="images/stripe-svgrepo-com.svg" alt="Stripe" class="h-20">
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-12 bg-gray-50">
+        <h2 class="text-center text-gray-700 text-2xl font-semibold">What We Do</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8 text-center">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="images/brochure.png" alt="Icon" class="mx-auto w-20 h-20">
+                <h3 class="mt-4 font-bold text-lg">Interface Design</h3>
+                <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="images/user-experience.png" alt="Icon" class="mx-auto w-20 h-20">
+                <h3 class="mt-4 font-bold text-lg">Web Application</h3>
+                <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="images/rgb.png" alt="Icon" class="mx-auto w-20 h-20">
+                <h3 class="mt-4 font-bold text-lg">Software Development</h3>
+                <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Pricing Section -->
+    <section class="bg-gradient-to-r from-red-300 to-orange-500 text-white py-16 text-center">
+        <h2 class="text-lg uppercase">How We Work</h2>
+        <h1 class="text-3xl font-bold mt-2">
+            We build <span class="text-blue-400">reliable infrastructure</span>, use <br> comprehensive in-house tools.
+        </h1>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12">
+            <!-- Pricing Cards -->
+            <div class="bg-white text-black p-6 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">PRO</h3>
+                <p class="text-3xl font-bold my-4">$2500 <span class="text-lg">/ month</span></p>
+                <p><strong>10</strong> billable hours included per month.</p>
+                <p>Billable hourly rate of <strong>$300</strong> after the included 10 hours.</p>
+                <p>24/7/365 on-call and 99.9% SLA.</p>
+                <button class="bg-black text-white mt-4 px-6 py-2 rounded-md">Contact Us</button>
+            </div>
+
+            <div class="bg-white text-black p-6 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">PREMIUM</h3>
+                <p class="text-3xl font-bold my-4">$5000 <span class="text-lg">/ month</span></p>
+                <p><strong>10</strong> billable hours included per month.</p>
+                <p>Billable hourly rate of <strong>$300</strong> after the included 10 hours.</p>
+                <p>24/7/365 on-call and 99.9% SLA.</p>
+                <button class="bg-black text-white mt-4 px-6 py-2 rounded-md">Contact Us</button>
+            </div>
+
+            <div class="bg-white text-black p-6 rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">ENTERPRISE</h3>
+                <p class="text-3xl font-bold my-4">$15000 <span class="text-lg">/ month</span></p>
+                <p><strong>10</strong> billable hours included per month.</p>
+                <p>Billable hourly rate of <strong>$300</strong> after the included 10 hours.</p>
+                <p>24/7/365 on-call and 99.9% SLA.</p>
+                <button class="bg-black text-white mt-4 px-6 py-2 rounded-md">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="bg-gray-300 py-16 text-center">
+        <h2 class="text-lg  font-semibold text-gray-800">Meet Our Team</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
+            <!-- Team Members -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="images/Me1.jpg" alt="John Doe" class="rounded-full mx-auto">
+                <h3 class="mt-4 font-bold text-lg text-blue-600">Ashadul</h3>
+                <p class="text-gray-500">DevOps</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="images/Me2.jpg" alt="Tinh Nguyen" class="rounded-full mx-auto">
+                <h3 class="mt-4 font-bold text-lg text-blue-600">Islam</h3>
+                <p class="text-gray-500">Designer</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="images/me3.jpg" alt="Maria Oto" class="rounded-full mx-auto">
+                <h3 class="mt-4 font-bold text-lg text-blue-600">RAfi</h3>
+                <p class="text-gray-500">Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section class="py-16 text-center">
+        <h3 class="text-gray-600 text-2xl mb-15 ">We love Open Source</h3>
+        <h1 class="text-6xl font-bold bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent mt-8 mb-12">We're making <br> Open Source Software</h1>
+        <button class="mt-4 bg-gray-900 text-white px-6 py-2 rounded-md">Follow us on GitHub</button>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-25 h-80 my-20 ">
+        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto my-30  text-center md:text-left">
+            <div>
+                <h4 class="font-semibold">Services</h4>
+                <ul>
+                    <li>DevOps</li>
+                    <li>Development</li>
+                    <li>Consultant</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold">Clients</h4>
+                <ul>
+                    <li>Lapa Ninja</li>
+                    <li>Noty IM</li>
+                    <li>Yoo Space</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold">Contact Us</h4>
+                <ul>
+                    <li>ashadulislam691@gmail.com</li>
+                    <li>Twitter</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold">Copyright</h4>
+                <ul>
+                    <li>Free Streamline Icons</li>
+                    <li>Buy Illustration Pack by Nimart</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
