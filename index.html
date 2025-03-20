@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-02</title>
+    <title>Document</title>
+    <!-- google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- daisyUI and tailwind cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <style>.font-poppins{ font-family: "Poppins", sans-serif;}</style>
+
 </head>
-<body class="bg-gray-100">
+<body class="font-poppins">
     <!-- Navbar -->
     <nav class="flex justify-between items-center p-6 bg-gradient-to-r from-red-300 to-orange-500 text-white">
         <div class="text-4xl text-gray-900 font-bold">DEV SPACE</div>
@@ -20,7 +30,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="flex justify-between items-center text-white p-12 bg-gradient-to-r from-red-300 to-orange-500">
+    <header class="flex flex-col lg:flex-row justify-between items-center text-white p-12 bg-gradient-to-r from-red-300 to-orange-500">
         <div class="text-center ml-60"><h1 class="text-6xl font-bold bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent">Design UI <br> App Development <br> Consultant Services</h1>
             <p class="mt-8 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="#" class="mt-10 inline-block bg-blue-900 text-white px-6 py-3 rounded-full">START A PROJECT TODAY</a>
@@ -51,19 +61,19 @@
                 <img src="images/brochure.png" alt="Icon" class="mx-auto w-20 h-20">
                 <h3 class="mt-4 font-bold text-lg">Interface Design</h3>
                 <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more</a>
+                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more...</a>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <img src="images/user-experience.png" alt="Icon" class="mx-auto w-20 h-20">
                 <h3 class="mt-4 font-bold text-lg">Web Application</h3>
                 <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more</a>
+                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more...</a>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <img src="images/rgb.png" alt="Icon" class="mx-auto w-20 h-20">
                 <h3 class="mt-4 font-bold text-lg">Software Development</h3>
                 <p class="text-gray-500 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more</a>
+                <a href="#" class="text-blue-600 mt-4 inline-block">Learn more...</a>
             </div>
         </div>
     </section>
@@ -72,7 +82,7 @@
 
     <!-- Pricing Section -->
     <section class="bg-gradient-to-r from-red-300 to-orange-500 text-white py-16 text-center">
-        <h2 class="text-lg uppercase">How We Work</h2>
+        <h2 class=" text-lg uppercase "><span class="bg-transparent border-b-2 border-black ">How We Work</span></h2>
         <h1 class="text-3xl font-bold mt-2">
             We build <span class="text-blue-400">reliable infrastructure</span>, use <br> comprehensive in-house tools.
         </h1>
@@ -110,7 +120,7 @@
 
     <!-- Team Section -->
     <section class="bg-gray-300 py-16 text-center">
-        <h2 class="text-lg  font-semibold text-gray-800">Meet Our Team</h2>
+        <h2 class="text-lg  font-semibold text-gray-800"><span class="bg-transparent border-b-2 border-yellow-400 ">Meet Our Team</span></h2>
         <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
             <!-- Team Members -->
             <div class="bg-white p-6 rounded-lg shadow-md">
@@ -130,48 +140,139 @@
             </div>
         </div>
     </section>
+    <!-- clients section -->
+<section class="pd-20 m-10">
+    <h2 class="text-5xl text-center">Happy <span class="text-orange-500">Clients Says</span></h2>
+    
+     <div class="grid grid-cols-1 lg:grid-cols-3 p-4 m-20">
+        <!-- client -1 -->
+        <div class="card bg-base-100 shadow-lg p-7">
+            <div class="avatar text-center ml-30">
+                <div class="ring-primary ring-offset-base-100 w-40 rounded-full ring ring-offset-2 ">
+                  <img class="items-center" src="images/user-1.png" />
+                </div>
+              </div>    
+            <div class="card-body">
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star" checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+              </div>
+              <h3 class="font-bold font-3xl">Messi</h3>
+            </div>
+          </div>
+          <!-- client -2 -->
+          <div class="card bg-base-100 shadow-lg p-7">
+            <div class="avatar text-center ml-30">
+                <div class="ring-primary ring-offset-base-100 w-40 rounded-full ring ring-offset-2 ">
+                  <img class="items-center" src="images/user-2.png" />
+                </div>
+              </div>    
+            <div class="card-body">
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star" checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" checked="checked"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" checked="checked"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+              </div> 
+              <h3 class="font-bold font-3xl">Morgan</h3>
+            </div>
+          </div>
+          <!-- client -3 -->
+          <div class="card bg-base-100 shadow-lg p-7">
+            <div class="avatar text-center ml-30">
+                <div class="ring-primary ring-offset-base-100 w-40 rounded-full ring ring-offset-2 ">
+                  <img class="items-center" src="images/user-3.png" />
+                </div>
+              </div>    
+            <div class="card-body">
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star" checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" checked="checked"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" checked="checked"/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+              </div>
+              <h3 class="font-bold font-3xl">Angelina</h3> 
+            </div>
+          </div>
+     </div>
+</section>
 
     <!-- Open Source Section -->
     <section class="py-16 text-center">
-        <h3 class="text-gray-600 text-2xl mb-15 ">We love Open Source</h3>
+        <h3 class="text-gray-600 text-2xl mb-15 "><span class="bg-transparent border-b-2 border-yellow-400 ">We love Open Source</span></h3>
         <h1 class="text-6xl font-bold bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent mt-8 mb-12">We're making <br> Open Source Software</h1>
         <button class="mt-4 bg-gray-900 text-white px-6 py-2 rounded-md">Follow us on GitHub</button>
     </section>
+    
+<!-- FAQ section -->
+    <section >
+        <h3 class="text-5xl text-center font-bold ">Frequently Asked Question</h3>
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="images/faq.png"
+                class="max-w-md rounded-lg shadow-2xl" />
+                <div class="space-y-7">
+                    <div class="collapse collapse-arrow border border-blue-300">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title font-semibold">How do I create an account?</div>
+                        <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+                      </div>
+                      <div class="collapse collapse-arrow  border border-blue-300">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+                        <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+                      </div>
+                      <div class="collapse collapse-arrow  border border-blue-300">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                        <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+                      </div>
+                </div>
+            </div>
+          </div>
+    
+    </section>
+    
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-25 h-80 my-20 ">
-        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto my-30  text-center md:text-left">
-            <div>
-                <h4 class="font-semibold">Services</h4>
-                <ul>
-                    <li>DevOps</li>
-                    <li>Development</li>
-                    <li>Consultant</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold">Clients</h4>
-                <ul>
-                    <li>Lapa Ninja</li>
-                    <li>Noty IM</li>
-                    <li>Yoo Space</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold">Contact Us</h4>
-                <ul>
-                    <li>ashadulislam691@gmail.com</li>
-                    <li>Twitter</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold">Copyright</h4>
-                <ul>
-                    <li>Free Streamline Icons</li>
-                    <li>Buy Illustration Pack by Nimart</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    
+    <footer class="footer bg-neutral text-neutral-content p-10">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Contact US</h6>
+            <a class="link link-hover">ashadulislam691@gmail.com</a>
+            <a class="link link-hover">Twitter</a>
+            <a class="link link-hover">Facebook</a>
+            <a class="link link-hover">GitHub</a>
+            
+          </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 </body>
 </html>
